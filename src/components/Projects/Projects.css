@@ -1,0 +1,44 @@
+.clipPathCard {
+    clip-path: polygon(25px 0%, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0% 25px);
+    
+}
+
+.tagwrap {
+    filter: drop-shadow(4px 4px 4px #000000);
+}
+
+.cardTheme1:hover {
+    transform: scale(1.1);
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cardTheme1-content {
+    width: 250px;
+    height: 250;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cardTheme1 h3 {
+    margin: 0;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardTheme1 p {
+    margin: 30px 0 0;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+}   
