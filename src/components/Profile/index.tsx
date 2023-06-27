@@ -63,9 +63,9 @@ function Profile(){
                                     Tailwind
                                 </p>
                             </div>
-                            <div id="about" className="heightButton">
+                            <div className="heightButton">
                                 <i className="devicon-bootstrap-plain colored"></i>
-                                <p className="text-white text-2xl sm:text-2xl m-5 m-5 font-['Poppins']">
+                                <p id="about" className="text-white text-2xl sm:text-2xl m-5 m-5 font-['Poppins']">
                                     Bootstrap
                                 </p>
                             </div>

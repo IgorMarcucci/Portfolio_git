@@ -1,19 +1,18 @@
+import { ReactNode } from "react";
 import "./Content.css";
-import Projects from "../Projects";
-import About from "../About";
-import Contact from "../Contact";
-import Profile from "../Profile";
 
-function Content(){
+interface contentProps {
+    children: ReactNode[];
+}
+
+function Content(props: contentProps){
     
     return(
-       
-            <div className="content">
-                <Profile />
-                <About />
-                <Projects />
-                <Contact />
-            </div>
+        <div className="content">
+            {
+                props.children
+            }
+        </div>
     );
 }
 
