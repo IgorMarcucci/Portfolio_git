@@ -1,10 +1,9 @@
 import Header from "../components/Header/Index";
 
-function CareerView(){
-    return(
+function CareerView() {
+    return (
         <>
-            <Header indexHeader={1}/>
-
+            <Header indexHeader={1} />
         </>
     );
 }

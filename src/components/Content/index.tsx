@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import "./Content.css";
 
 interface contentProps {
-    children: ReactNode[];
+    children: ReactNode;
 }
 
 function Content(props: contentProps){

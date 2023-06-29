@@ -6,19 +6,19 @@ import NavBar from "../components/NavBar";
 import Profile from "../components/Profile";
 import Projects from "../components/Projects";
 
-function HomeView(){
-  return (
-    <>
-      <Header indexHeader={0}/>
-      <Content>
-        <Profile />
-        <About />
-        <Projects />
-        <Contact />
-      </Content>
-      <NavBar/>
-    </>
-  );
+function HomeView() {
+    return (
+        <>
+            <Header indexHeader={0} />
+            <Content>
+                <Profile />
+                <About />
+                <Projects />
+                <Contact />
+            </Content>
+            <NavBar />
+        </>
+    );
 }
 
 export default HomeView;

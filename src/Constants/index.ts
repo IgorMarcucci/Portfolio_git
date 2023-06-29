@@ -54,20 +54,146 @@ class ConstantsValues {
     static aboutList = [
         {
             title: "Sobre mim",
-            description: "Olá, seja bem-vindx ao meu portfólio! Meu nome é Igor e sou um desenvolvedor front-end e mobile com habilidades sólidas em Flutter e React. Nesta breve apresentação, gostaria de compartilhar um pouco sobre minha experiência e conhecimento nessas duas tecnologias.",
-            route: "/career/*"
+            description: "Olá, sejam bem-vindos ao meu portfólio! Meu nome é Igor e sou um desenvolvedor front-end e mobile com habilidades sólidas em Flutter e React. Nesta breve apresentação, gostaria de compartilhar um pouco sobre minha experiência e conhecimento nessas duas tecnologias.",
+            route: "/career"
         },
         {
             title: "React.js",
-            description: "Sou um desenvolvedor front-end com experiência em React. Possuo habilidades em responsividade, consumo de API, layouts, Bootstrap, Tailwind e outros recursos do React. Minha abordagem é focada na criação de interfaces interativas e funcionais.",
-            route: "/react/*"
+            description: "Possuo habilidades em responsividade, consumo de API, layouts, Bootstrap, Tailwind e outros recursos do React, minha abordagem é focada na criação de interfaces interativas e funcionais.",
+            route: "/react"
         },
         {
             title: "Flutter",
-            description: "Tenho expertise em desenvolvimento mobile com Flutter. Minhas habilidades incluem gerenciamento de estado, consumo de APIs, tokens, layouts e outros recursos do Flutter. Priorizo o desempenho suave e a responsividade em minhas aplicações.",
-            route: "/flutter/*"
+            description: "Minhas habilidades incluem gerenciamento de estado, consumo de APIs, tokens, layouts e outros recursos do Flutter, priorizo o desempenho suave e a responsividade em minhas aplicações.",
+            route: "/flutter"
         },
-    ]
+    ];
+
+    static flutterSkills = [
+        {
+            name: "IDEs",
+            options: [
+                "VS Code",
+                "Android Studio",
+            ],
+        },
+        {
+            name: "Widgets",
+            options: [
+                "Responsive widgets",
+                "Stateless Widgets",
+                "Stateful Widgets",
+                "Material Widgets",
+            ],
+        },
+        {
+            name: "Storage",
+            options: [
+                "Shared Preferences",
+                "Firebase - Firestore/Storage/Authentication",
+                "Hive",
+            ],
+        },
+        {
+            name: "State Management",
+            options: [
+                "Provider",
+                "MobX",
+                "GetX",
+            ],
+        },
+        {
+            name: "Design Principles",
+            options: [
+                "OOP",
+                "Design patterns - Singleton/MVC/MVVM",
+            ],
+        },
+        {
+            name: "APIs",
+            options: [
+                "RESTful APIs",
+                "GraphQL",
+                "Web Sockets",
+                "JSON Serialize/Deserialize",
+            ],
+        },
+        {
+            name: "Advanced Dart",
+            options: [
+                "Futures",
+                "Streams",
+                "Async/Await",
+                "Lambdas",
+            ],
+        },
+    ];
+
+    static reactSkills = [
+        {
+            name: "CLIs Tools",
+            options: [
+                "Create React App",
+                "Vite",
+            ],
+        },
+        {
+            name: "Components",
+            options: [
+                "Functional components",
+                "JSX",
+                "Props vs State",
+                "Conditional rendering",
+                "Composition",
+            ],
+        },
+        {
+            name: "Rendering",
+            options: [
+                "Component Life Cycle",
+                "Lists and Keys",
+                "Render props",
+                "Refs",
+                "Events",
+            ],
+        },
+        {
+            name: "State Management",
+            options: [
+                "Redux",
+                "Context",
+            ],
+        },
+        {
+            name: "Router",
+            options: [
+                "React Router",
+            ],
+        },
+        {
+            name: "Hooks",
+            options: [
+                "useCallback",
+                "useContext",
+                "useState",
+                "useEffect",
+            ],
+        },
+        {
+            name: "Styling",
+            options: [
+                "CSS Modules",
+                "Tailwind",
+                "Styled Components",
+            ],
+        },
+        {
+            name: "Rest",
+            options: [
+                "Axios",
+            ],
+        },
+    ];
 }
 
 export default ConstantsValues;
