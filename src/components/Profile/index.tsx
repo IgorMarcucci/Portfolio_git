@@ -31,10 +31,10 @@ function Profile() {
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
-                            .typeString("Seja bem vindx")
+                            .typeString("Sejam bem vindos")
                             .pauseFor(3000)
                             .deleteAll()
-                            .typeString("Desenvolvedor Front-end")
+                            .typeString("Desenvolvedor Web e Mobile")
                             .start();
                     }
                     }

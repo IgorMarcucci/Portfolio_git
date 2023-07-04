@@ -26,7 +26,7 @@ function About() {
                         <p className="pl-5 pr-5 text-md sm:text-xl text-white mt-5 mb-5 font-['Poppins'] flex justify-center items-center text-justify">
                             {value.description}
                         </p>
-                        <p onClick={() => { navigateRoute(value.route) }} className="pl-5 pr-5 text-xs sm:text-base text-[#6392ff] hover:text-[#9CBAFF] mt-2 mb-10 font-['Poppins'] flex justify-center items-center text-justify">
+                        <p onClick={() => { navigateRoute(value.route) }} className="pl-5 pr-5 text-md sm:text-xl text-[#6392ff] hover:text-[#9CBAFF] mt-2 mb-10 font-['Poppins'] flex justify-center items-center text-justify">
                             Ver mais...
                         </p>
                     </Fragment>

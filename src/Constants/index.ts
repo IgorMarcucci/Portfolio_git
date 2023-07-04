@@ -61,12 +61,12 @@ class ConstantsValues {
     static aboutList = [
         {
             title: "Sobre mim",
-            description: "Olá, sejam bem-vindos ao meu portfólio! Meu nome é Igor e sou um desenvolvedor front-end e mobile com habilidades sólidas em Flutter e React. Nesta breve apresentação, gostaria de compartilhar um pouco sobre minha experiência e conhecimento nessas duas tecnologias.",
+            description: "Meu nome é Igor e sou desenvolvedor Web e Mobile com habilidades sólidas em Flutter e React.js. Nesta breve apresentação, estarei compartilhando um pouco sobre minha experiência e conhecimento em ambas tecnologias.",
             route: "/career"
         },
         {
             title: "React.js",
-            description: "Possuo habilidades em responsividade, consumo de API, layouts, Bootstrap, Tailwind e outros recursos do React, minha abordagem é focada na criação de interfaces interativas e funcionais.",
+            description: "Contenho aptidão em responsividade, consumo de API, layouts, Bootstrap, Tailwind e outros recursos do React, minha abordagem é focada na criação de interfaces interativas e funcionais.",
             route: "/react"
         },
         {
