@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 function CareerArea(){
     return(
         <div className="m-10">
-            <div className="text-white text-3xl sm:text-5xl m-10 justify-evenly items-center">
+            <div className="text-center text-white text-3xl sm:text-5xl m-10 justify-evenly items-center">
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter

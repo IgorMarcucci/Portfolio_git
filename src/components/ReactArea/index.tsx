@@ -1,13 +1,13 @@
 import Typewriter from "typewriter-effect";
 
-function FlutterArea() {
+function ReactArea() {
     return (
         <div className="m-10">
-            <div className="text-center text-white text-3xl sm:text-5xl m-10 justify-evenly items-center">
+            <div className="text-white text-3xl sm:text-5xl m-10 justify-evenly items-center text-center">
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
-                            .typeString("Flutter")
+                            .typeString("React.js")
                             .start();
                     }
                     }
@@ -17,4 +17,4 @@ function FlutterArea() {
     );
 }
 
-export default FlutterArea;
+export default ReactArea;

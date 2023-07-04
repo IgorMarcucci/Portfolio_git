@@ -65,7 +65,7 @@ function Profile() {
                     </div>
                     <div className="heightButton">
                         <i className="devicon-bootstrap-plain colored"></i>
-                        <p id="about" className="text-white text-2xl sm:text-2xl m-5 font-['Poppins']">
+                        <p className="text-white text-2xl sm:text-2xl m-5 font-['Poppins']">
                             Bootstrap
                         </p>
                     </div>

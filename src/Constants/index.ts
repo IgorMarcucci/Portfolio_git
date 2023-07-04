@@ -1,3 +1,5 @@
+import { MdWork, MdSchool } from "react-icons/md"
+
 class ConstantsValues {
     static projectsList = [
         {
@@ -32,23 +34,28 @@ class ConstantsValues {
 
     static workHistory = [
         {
-            companyName: "Take and Go",
-            role: "Analista de suporte computacional",
-            description: "Soluções de suporte na área da tecnologia, geração de relatórios e análise de erros",
-            date: "Outubro/2021 - Maio/2022"
+            companyName: "Agrosure",
+            role: "Desenvolvedor júnior",
+            description: "Desenvolvimento de softwares Mobile e Web, uso do framework Flutter, do React.js e de suas tecnologias no dia a dia",
+            date: "Agosto/2022 - Atualmente",
+            icon: MdWork,
         },
         {
             companyName: "Agrosure",
             role: "Estágio de desenvolvimento C/C++",
             description: "Desenvolvimento de softwares voltados para sistemas embarcados em C/C++, utilizando também o QT Creator e suas tecnologias",
-            date: "Maio/2022 - Agosto/2022"
+            date: "Maio/2022 - Agosto/2022",
+            icon: MdSchool,
         },
         {
-            companyName: "Agrosure",
-            role: "Desenvolvedor júnior",
-            description: "Desenvolvimento de softwares mobile e web, uso do framework Flutter, do React.js e de suas tecnologias no dia a dia",
-            date: "Agosto/2022 - Atualmente"
+            companyName: "Take and Go",
+            role: "Analista de suporte computacional",
+            description: "Soluções de suporte na área da tecnologia, geração de relatórios e análise de erros",
+            date: "Outubro/2021 - Maio/2022",
+            icon: MdWork,
         }
+        
+        
     ];
 
     static aboutList = [
@@ -80,7 +87,7 @@ class ConstantsValues {
         {
             name: "Widgets",
             options: [
-                "Responsive widgets",
+                "Responsive Widgets",
                 "Stateless Widgets",
                 "Stateful Widgets",
                 "Material Widgets",
@@ -100,6 +107,7 @@ class ConstantsValues {
                 "Provider",
                 "MobX",
                 "GetX",
+                "BLoC"
             ],
         },
         {
@@ -191,6 +199,7 @@ class ConstantsValues {
             name: "Rest",
             options: [
                 "Axios",
+                "Superagent",
             ],
         },
     ];
