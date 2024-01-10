@@ -20,13 +20,13 @@ function About() {
             {
                 ConstantsValues.aboutList.map((value, index) => (
                     <Fragment key={index} >
-                        <p className="text-3xl sm:text-3xl text-white mt-5 mb-5 font-['Poppins'] flex justify-center items-center text-justify">
+                        <p className="text-3xl sm:text-3xl text-white mt-5 mb-5 font-['Poppins'] flex justify-center items-center text-center">
                             {value.title}
                         </p>
                         <p className="pl-5 pr-5 text-md sm:text-xl text-white mt-5 mb-5 font-['Poppins'] flex justify-center items-center text-justify">
                             {value.description}
                         </p>
-                        <p onClick={() => { navigateRoute(value.route) }} className="pl-5 pr-5 text-md sm:text-xl text-[#6392ff] hover:text-[#9CBAFF] mt-2 mb-10 font-['Poppins'] flex justify-center items-center text-justify">
+                        <p onClick={() => { navigateRoute(value.route) }} className="pl-5 pr-5 text-md sm:text-xl text-[#6392ff] hover:text-[#9CBAFF] mt-2 mb-10 font-['Poppins'] flex justify-center items-center text-center">
                             Ver mais...
                         </p>
                     </Fragment>

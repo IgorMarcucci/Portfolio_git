@@ -1,7 +1,9 @@
 import { MdWork, MdSchool } from "react-icons/md"
+import { BiLogoAngular, BiLogoFlutter, BiLogoReact } from "react-icons/bi"
+import { LangInterface } from "../interfaces/lang_interface";
 
 class ConstantsValues {
-    static projectsList = [
+    projectsList = [
         {
             name: "Software para atualização de embarcados",
             description: "Software desenvolvido em C++/QT/QML para atualização de firmware em sistemas embarcados"
@@ -32,17 +34,17 @@ class ConstantsValues {
         },
     ];
 
-    static workHistory = [
+    workHistory = [
         {
             companyName: "Agrosure",
-            role: "Desenvolvedor júnior",
+            role: "Desenvolvedor",
             description: "Desenvolvimento de softwares Mobile e Web, uso do framework Flutter, do React.js e de suas tecnologias no dia a dia",
             date: "Agosto/2022 - Atualmente",
             icon: MdWork,
         },
         {
             companyName: "Agrosure",
-            role: "Estágio de desenvolvimento C/C++",
+            role: "Estágio de desenvolvimento",
             description: "Desenvolvimento de softwares voltados para sistemas embarcados em C/C++, utilizando também o QT Creator e suas tecnologias",
             date: "Maio/2022 - Agosto/2022",
             icon: MdSchool,
@@ -58,7 +60,7 @@ class ConstantsValues {
         
     ];
 
-    static aboutList = [
+    aboutList = [
         {
             title: "Sobre mim",
             description: "Meu nome é Igor e sou desenvolvedor Web e Mobile com habilidades sólidas em Flutter e React.js. Nesta breve apresentação, estarei compartilhando um pouco sobre minha experiência e conhecimento em ambas tecnologias.",
@@ -76,13 +78,15 @@ class ConstantsValues {
         },
     ];
 
-    static flutterSkills = [
+    flutterSkills: LangInterface[] = [
         {
             name: "IDEs",
             options: [
                 "VS Code",
                 "Android Studio",
             ],
+            icon: BiLogoFlutter
+            
         },
         {
             name: "Widgets",
@@ -92,6 +96,7 @@ class ConstantsValues {
                 "Stateful Widgets",
                 "Material Widgets",
             ],
+            icon: BiLogoFlutter
         },
         {
             name: "Storage",
@@ -100,6 +105,7 @@ class ConstantsValues {
                 "Firebase - Firestore/Storage/Authentication",
                 "Hive",
             ],
+            icon: BiLogoFlutter
         },
         {
             name: "State Management",
@@ -109,6 +115,7 @@ class ConstantsValues {
                 "GetX",
                 "BLoC"
             ],
+            icon: BiLogoFlutter
         },
         {
             name: "Design Principles",
@@ -116,6 +123,7 @@ class ConstantsValues {
                 "OOP",
                 "Design patterns - Singleton/MVC/MVVM",
             ],
+            icon: BiLogoFlutter
         },
         {
             name: "APIs",
@@ -125,6 +133,7 @@ class ConstantsValues {
                 "Web Sockets",
                 "JSON Serialize/Deserialize",
             ],
+            icon: BiLogoFlutter
         },
         {
             name: "Advanced Dart",
@@ -134,16 +143,99 @@ class ConstantsValues {
                 "Async/Await",
                 "Lambdas",
             ],
+            icon: BiLogoFlutter
         },
     ];
 
-    static reactSkills = [
+    angularSkills: LangInterface[] = [
+        {
+            name: "Angular CLI",
+            options: [
+                "ng build",
+                "ng serve",
+                "ng generate",
+                "ng test",
+            ],
+            icon: BiLogoAngular
+        },
+        {
+            name: "Basics",
+            options: [
+                "Components",
+                "Templates",
+                "Modules",
+                "Services",
+            ],
+            icon: BiLogoAngular
+        },
+        {
+            name: "Forms",
+            options: [
+                "Reactives Forms",
+            ],
+            icon: BiLogoAngular
+        },
+        {
+            name: "Rendering Topics",
+            options: [
+                "Built-in Directives",
+                "Built-in Pipes",
+                "Change Detection",
+            ],
+            icon: BiLogoAngular
+        },
+        {
+            name: "Routing",
+            options: [
+                "Router Outlets",
+                "Router Links",
+                "Route Events",
+            ],
+            icon: BiLogoAngular
+        },
+        {
+            name: "Templates",
+            options: [
+                "Interpolation",
+                "Property Binding",
+                "Template statements",
+                "@Input and @Output",
+                "Reference variables",
+            ],
+            icon: BiLogoAngular
+        },
+        {
+            name: "State Management",
+            options: [
+                "NGRX",
+            ],
+            icon: BiLogoAngular
+        },
+        {
+            name: "Creating a custom",
+            options: [
+                "Directives",
+                "Pipe",
+            ],
+            icon: BiLogoAngular
+        },
+        {
+            name: "Services and Remote Data",
+            options: [
+                "Dependency Injection",
+            ],
+            icon: BiLogoAngular
+        },
+    ];
+
+    reactSkills: LangInterface[] = [
         {
             name: "CLIs Tools",
             options: [
                 "Create React App",
                 "Vite",
             ],
+            icon: BiLogoReact
         },
         {
             name: "Components",
@@ -154,6 +246,7 @@ class ConstantsValues {
                 "Conditional rendering",
                 "Composition",
             ],
+            icon: BiLogoReact
         },
         {
             name: "Rendering",
@@ -164,6 +257,7 @@ class ConstantsValues {
                 "Refs",
                 "Events",
             ],
+            icon: BiLogoReact
         },
         {
             name: "State Management",
@@ -171,12 +265,14 @@ class ConstantsValues {
                 "Redux",
                 "Context",
             ],
+            icon: BiLogoReact
         },
         {
             name: "Router",
             options: [
                 "React Router",
             ],
+            icon: BiLogoReact
         },
         {
             name: "Hooks",
@@ -186,6 +282,7 @@ class ConstantsValues {
                 "useState",
                 "useEffect",
             ],
+            icon: BiLogoReact
         },
         {
             name: "Styling",
@@ -194,6 +291,7 @@ class ConstantsValues {
                 "Tailwind",
                 "Styled Components",
             ],
+            icon: BiLogoReact
         },
         {
             name: "Rest",
@@ -201,6 +299,7 @@ class ConstantsValues {
                 "Axios",
                 "Superagent",
             ],
+            icon: BiLogoReact
         },
     ];
 }

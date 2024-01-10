@@ -27,7 +27,7 @@ function Profile() {
 
     return (
         <div className="m-10">
-            <div className="text-white text-3xl sm:text-5xl m-5 justify-evenly items-center">
+            <div className="text-center text-white text-3xl sm:text-5xl m-3 justify-evenly items-center">
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
@@ -44,28 +44,28 @@ function Profile() {
                 <div className="flex flex-row justify-center p-5">
                     <img alt="image_perfil" className="w-[250px] shadow-md rounded-full justify-center p-3 bg-[#101010]" src="logo.jpg" />
                 </div>
-                <div className="flex flex-col justify-evenly">
+                <div className="flex flex-col justify-evenly items-center">
                     <div className="heightButton">
                         <i className="devicon-flutter-plain colored"></i>
-                        <p className="text-white text-2xl sm:text-2xl m-5 font-['Poppins']">
+                        <p className="text-center text-white text-2xl sm:text-2xl m-3 font-['Poppins']">
                             Flutter
                         </p>
                     </div>
                     <div className="heightButton">
                         <i className="devicon-react-original colored"></i>
-                        <p className="text-white text-2xl sm:text-2xl m-5 font-['Poppins']">
+                        <p className="text-center text-white text-2xl sm:text-2xl m-3 font-['Poppins']">
                             React.js
                         </p>
                     </div>
                     <div className="heightButton">
                         <i className="devicon-tailwindcss-plain colored"></i>
-                        <p className="text-white text-2xl sm:text-2xl m-5 font-['Poppins']">
+                        <p className="text-center text-white text-2xl sm:text-2xl m-3 font-['Poppins']">
                             Tailwind
                         </p>
                     </div>
                     <div className="heightButton">
                         <i className="devicon-bootstrap-plain colored"></i>
-                        <p className="text-white text-2xl sm:text-2xl m-5 font-['Poppins']">
+                        <p className="text-center text-white text-2xl sm:text-2xl m-3 font-['Poppins']">
                             Bootstrap
                         </p>
                     </div>

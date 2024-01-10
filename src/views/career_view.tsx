@@ -2,18 +2,19 @@ import Header from "../components/Header/Index";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Content from "../components/Content";
-import CareerArea from "../components/CareerArea";
 import ConstantsValues from "../Constants";
+import TopNameArea from "../components/TopNameArea";
 
 function CareerView() {
+    const constants: ConstantsValues = new ConstantsValues();
     return (
         <>
             <Header indexHeader={1} />
             <Content>
-                <CareerArea />
+                <TopNameArea value="Carreira" />
                 <VerticalTimeline>
                     {
-                        ConstantsValues.workHistory.map((value, index) => (
+                        constants.workHistory.map((value, index) => (
                             <VerticalTimelineElement
                                 key={index}
                                 className="vertical-timeline-element--work font-['Poppins']"
