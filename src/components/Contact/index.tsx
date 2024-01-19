@@ -27,15 +27,15 @@ function Contact() {
             </p>
             <div className="mb-[90px] flex flex-col justify-center items-center">
                 <div onClick={contactToEmail} className="w-auto flex flex-row justify-center text-white items-center hover:text-[#6392ff]">
-                    <p className="mt-10 mb-10 text-sm sm:text-xl font-['Poppins'] flex justify-center items-center text-center">
+                    <button className="mt-10 mb-10 text-sm sm:text-xl font-['Poppins'] flex justify-center items-center text-center">
                         Contato via E-mail
-                    </p>
+                    </button>
                     <BiLogoGmail className="text-xl flex justify-center items-center m-2" />
                 </div>
                 <div onClick={contactToWhatsapp} className="w-auto flex flex-row justify-center text-white items-center hover:text-[#6392ff]">
-                    <p className="mt-10 mb-10 text-sm sm:text-xl font-['Poppins'] flex justify-center items-center text-center">
+                    <button className="mt-10 mb-10 text-sm sm:text-xl font-['Poppins'] flex justify-center items-center text-center">
                         Contato via Whatsapp
-                    </p>
+                    </button>
                     <BiLogoWhatsapp className="text-xl flex justify-center items-center m-2" />
                 </div>
                 <div className="w-auto flex flex-row justify-center text-white items-center">

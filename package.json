@@ -11,12 +11,15 @@
     "homepage": "https://igormarcucci.github.io/Portfolio_git/#"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
+    "react-redux": "^9.0.4",
     "react-router-dom": "^6.14.1",
     "react-scroll": "^1.8.9",
     "react-vertical-timeline-component": "^3.6.0",
+    "redux": "^5.0.1",
     "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {

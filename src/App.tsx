@@ -2,6 +2,7 @@ import HomeView from './views/home_view';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import CareerView from './views/career_view';
 import LangView from './views/lang_view';
+import DevelopView from './views/develop_view';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
                     <Route path="/flutter" element={<LangView />} />
                     <Route path="/react" element={<LangView />} />
                     <Route path="/angular" element={<LangView />} />
-                    {/* <Route path="/c#" element={<LangView />} /> */}
+                    <Route path="/develop" element={<DevelopView />} />
                     <Route path="/career" element={<CareerView />} />
                 </Routes>
             </HashRouter>

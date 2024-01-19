@@ -1,40 +1,92 @@
 import { MdWork, MdSchool } from "react-icons/md"
-import { BiLogoAngular, BiLogoFlutter, BiLogoReact } from "react-icons/bi"
 import { LangInterface } from "../interfaces/lang_interface";
+import { ProjectsInterface } from "../interfaces/projects_interface";
+import { CareerInterface } from "../interfaces/career_interface";
+import { AboutInterface } from "../interfaces/about_interface";
+import { TechInterface } from "../interfaces/tech_interface";
 
 class ConstantsValues {
-    projectsList = [
+    techList: TechInterface[] = [
+        {
+            name: "Flutter",
+            icon: 'devicon-flutter-plain colored',
+        },
+        {
+            name: "Angular",
+            icon: 'devicon-angularjs-plain colored',
+        },
+        {
+            name: "React.js",
+            icon: 'devicon-react-original colored',
+        },
+        {
+            name: ".NET Core",
+            icon: 'devicon-dotnetcore-plain colored',
+        },
+        {
+            name: "OracleSQL",
+            icon: 'devicon-oracle-original colored',
+        },
+        {
+            name: "PostgreSQL",
+            icon: 'devicon-postgresql-plain colored',
+        }
+    ];
+
+    projectsList: ProjectsInterface[] = [
         {
             name: "Software para atualização de embarcados",
-            description: "Software desenvolvido em C++/QT/QML para atualização de firmware em sistemas embarcados"
+            description: "Software desenvolvido em C++/QT/QML para atualização de firmware em sistemas embarcados",
+            link: '',
         },
         {
             name: "Aplicativo mobile para rastreamento",
-            description: "Aplicativo mobile desenvolvido em Flutter para rastreamento de dispositivos"
+            description: "Aplicativo mobile desenvolvido em Flutter para rastreamento de dispositivos",
+            link: '',
         },
         {
             name: "Plataforma web para gestão de comércio exterior",
-            description: "Plataforma web desenvolvida em Flutter para gestão de operações de comércio exterior"
+            description: "Plataforma web desenvolvida em Angular para gestão de operações de comércio exterior",
+            link: '',
         },
         {
             name: "Plataforma web para gestão de custos",
-            description: "Plataforma web desenvolvida em Flutter para gestão de custos"
+            description: "Plataforma web desenvolvida em React.js para gestão de custos",
+            link: '',
         },
         {
             name: "Aplicativo mobile para gestão de estoque e logística",
-            description: "Aplicativo mobile que está sendo desenvolvido em Flutter para gerenciamento de estoque e operações logísticas"
+            description: "Aplicativo mobile desenvolvido em Flutter para gerenciamento de estoque e operações logísticas",
+            link: 'https://github.com/IgorMarcucci/storage_flow',
         },
         {
             name: "Aplicativo mobile para gerenciamento de estacionamento",
-            description: "Aplicativo mobile que está sendo desenvolvido em Flutter para gerenciamento de estacionamento e visualização de vagas em tempo real"
+            description: "Aplicativo mobile desenvolvido em Flutter para gerenciamento de estacionamento e visualização de vagas em tempo real",
+            link: 'https://github.com/IgorMarcucci/ParkIn/tree/rebase',
         },
         {
             name: "Plataforma web para gerenciamento de questões de RH",
-            description: "Plataforma web que está sendo desenvolvida em React.js para gestão de RH"
+            description: "Plataforma web que está sendo desenvolvida em React.js para gestão de RH",
+            link: '',
+        },
+        {
+            name: "Aplicativo mobile genérico",
+            description: "Aplicativo mobile desenvolvido em Flutter como modelo e base para outros projetos, com telas e funcionalidades genéricas e reutilizáveis.",
+            link: 'https://github.com/IgorMarcucci/ModelApp',
+        },
+        {
+            name: "Api de software Kanban",
+            description: "API de software Kanban desenvolvida em Python, usando o Flask, para comunicar com software de gerenciamento de tarefas e projetos.",
+            link: 'https://github.com/IgorMarcucci/Kanban_API',
+        },
+        {
+            name: "Api de software de comunicação",
+            description: "API de software de comunicação desenvolvida em C#, usando o .NET Core, para comunicar com software de comunicação e mensagens.",
+            link: '',
         },
     ];
 
-    workHistory = [
+    workHistory: CareerInterface[] = [
         {
             companyName: "Agrosure",
             role: "Desenvolvedor",
@@ -60,21 +112,36 @@ class ConstantsValues {
         
     ];
 
-    aboutList = [
+    aboutList: AboutInterface[] = [
         {
             title: "Sobre mim",
-            description: "Meu nome é Igor e sou desenvolvedor Web e Mobile com habilidades sólidas em Flutter e React.js. Nesta breve apresentação, estarei compartilhando um pouco sobre minha experiência e conhecimento em ambas tecnologias.",
+            description: "Meu nome é Igor e sou engenheiro de software com habilidades sólidas em Flutter, Angular, React.js, C#, OracleSQL e PostgreSQL. Nesta breve apresentação, estarei compartilhando um pouco sobre minha experiência e conhecimento em ambas tecnologias.",
             route: "/career"
         },
         {
+            title: "Flutter",
+            description: "Minhas habilidades incluem gerenciamento de estado, consumo de APIs, responsividade, tokens e outros recursos do Flutter.",
+            route: "/flutter"
+        },
+        {
+            title: "Angular",
+            description: "Possuo conhecimento em gerenciamento de estado, consumo de APIs, tokens, layouts e outros recursos do Angular, ",
+            route: "/angular"
+        },
+        {
             title: "React.js",
-            description: "Contenho aptidão em responsividade, consumo de API, layouts, Bootstrap, Tailwind e outros recursos do React, minha abordagem é focada na criação de interfaces interativas e funcionais.",
+            description: "Contenho aptidão em responsividade, consumo de APIs, gerenciamento de estado, layouts, Bootstrap, Tailwind e outros recursos do React.js.",
             route: "/react"
         },
         {
-            title: "Flutter",
-            description: "Minhas habilidades incluem gerenciamento de estado, consumo de APIs, tokens, layouts e outros recursos do Flutter, priorizo o desempenho suave e a responsividade em minhas aplicações.",
-            route: "/flutter"
+            title: ".NET Core",
+            description: "Habilidades no desenvolvimento de APIs, utilizando o framework .NET Core e suas tecnologias, como Entity Framework, Identity, JWT, Swagger, e outros recursos do C#.",
+            route: "/develop"
+        },
+        {
+            title: "OracleSQL e PostgreSQL",
+            description: "Conhecimento em criação de tabelas, relacionamentos, procedures, triggers, índices, e outros recursos do OracleSQL e PostgreSQL.",
+            route: "/develop"
         },
     ];
 
@@ -85,7 +152,6 @@ class ConstantsValues {
                 "VS Code",
                 "Android Studio",
             ],
-            icon: BiLogoFlutter
             
         },
         {
@@ -96,7 +162,6 @@ class ConstantsValues {
                 "Stateful Widgets",
                 "Material Widgets",
             ],
-            icon: BiLogoFlutter
         },
         {
             name: "Storage",
@@ -105,7 +170,6 @@ class ConstantsValues {
                 "Firebase - Firestore/Storage/Authentication",
                 "Hive",
             ],
-            icon: BiLogoFlutter
         },
         {
             name: "State Management",
@@ -115,7 +179,6 @@ class ConstantsValues {
                 "GetX",
                 "BLoC"
             ],
-            icon: BiLogoFlutter
         },
         {
             name: "Design Principles",
@@ -123,7 +186,6 @@ class ConstantsValues {
                 "OOP",
                 "Design patterns - Singleton/MVC/MVVM",
             ],
-            icon: BiLogoFlutter
         },
         {
             name: "APIs",
@@ -133,7 +195,6 @@ class ConstantsValues {
                 "Web Sockets",
                 "JSON Serialize/Deserialize",
             ],
-            icon: BiLogoFlutter
         },
         {
             name: "Advanced Dart",
@@ -143,7 +204,6 @@ class ConstantsValues {
                 "Async/Await",
                 "Lambdas",
             ],
-            icon: BiLogoFlutter
         },
     ];
 
@@ -156,7 +216,6 @@ class ConstantsValues {
                 "ng generate",
                 "ng test",
             ],
-            icon: BiLogoAngular
         },
         {
             name: "Basics",
@@ -166,14 +225,12 @@ class ConstantsValues {
                 "Modules",
                 "Services",
             ],
-            icon: BiLogoAngular
         },
         {
             name: "Forms",
             options: [
                 "Reactives Forms",
             ],
-            icon: BiLogoAngular
         },
         {
             name: "Rendering Topics",
@@ -182,7 +239,6 @@ class ConstantsValues {
                 "Built-in Pipes",
                 "Change Detection",
             ],
-            icon: BiLogoAngular
         },
         {
             name: "Routing",
@@ -191,7 +247,6 @@ class ConstantsValues {
                 "Router Links",
                 "Route Events",
             ],
-            icon: BiLogoAngular
         },
         {
             name: "Templates",
@@ -202,14 +257,12 @@ class ConstantsValues {
                 "@Input and @Output",
                 "Reference variables",
             ],
-            icon: BiLogoAngular
         },
         {
             name: "State Management",
             options: [
                 "NGRX",
             ],
-            icon: BiLogoAngular
         },
         {
             name: "Creating a custom",
@@ -217,14 +270,12 @@ class ConstantsValues {
                 "Directives",
                 "Pipe",
             ],
-            icon: BiLogoAngular
         },
         {
             name: "Services and Remote Data",
             options: [
                 "Dependency Injection",
             ],
-            icon: BiLogoAngular
         },
     ];
 
@@ -235,7 +286,6 @@ class ConstantsValues {
                 "Create React App",
                 "Vite",
             ],
-            icon: BiLogoReact
         },
         {
             name: "Components",
@@ -246,7 +296,6 @@ class ConstantsValues {
                 "Conditional rendering",
                 "Composition",
             ],
-            icon: BiLogoReact
         },
         {
             name: "Rendering",
@@ -257,7 +306,6 @@ class ConstantsValues {
                 "Refs",
                 "Events",
             ],
-            icon: BiLogoReact
         },
         {
             name: "State Management",
@@ -265,14 +313,12 @@ class ConstantsValues {
                 "Redux",
                 "Context",
             ],
-            icon: BiLogoReact
         },
         {
             name: "Router",
             options: [
                 "React Router",
             ],
-            icon: BiLogoReact
         },
         {
             name: "Hooks",
@@ -282,7 +328,6 @@ class ConstantsValues {
                 "useState",
                 "useEffect",
             ],
-            icon: BiLogoReact
         },
         {
             name: "Styling",
@@ -291,7 +336,6 @@ class ConstantsValues {
                 "Tailwind",
                 "Styled Components",
             ],
-            icon: BiLogoReact
         },
         {
             name: "Rest",
@@ -299,7 +343,6 @@ class ConstantsValues {
                 "Axios",
                 "Superagent",
             ],
-            icon: BiLogoReact
         },
     ];
 }

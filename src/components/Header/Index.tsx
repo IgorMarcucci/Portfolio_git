@@ -23,18 +23,18 @@ function Header(props: headerProps) {
             }
             <div className=" h-[100px] md:w-[85%] w-[70%] bg-[#171717] flex flex-row justify-between items-center text-lg font-['Poppins']">
 
-                <div className="h-[46px] flex flex-row items-center text-white hover:text-[#9a9a9a]" onClick={() => { redirectToGitHub('https://www.linkedin.com/in/igor-marcucci/') }}>
+                <button className="h-[46px] flex flex-row items-center text-white hover:text-[#9a9a9a]" onClick={() => { redirectToGitHub('https://www.linkedin.com/in/igor-marcucci/') }}>
                     <i className="devicon-linkedin-plain"></i>
                     <p className="m-2">
                         Igor Marcucci
                     </p>
-                </div>
-                <div className="h-[46px] flex flex-row items-center text-white hover:text-[#9a9a9a]" onClick={() => { redirectToGitHub('https://github.com/IgorMarcucci') }}>
+                </button>
+                <button className="h-[46px] flex flex-row items-center text-white hover:text-[#9a9a9a]" onClick={() => { redirectToGitHub('https://github.com/IgorMarcucci') }}>
                     <p className="m-2">
                         GitHub
                     </p>
                     <i className="devicon-github-original"></i>
-                </div>
+                </button>
             </div>
 
         </div>

@@ -1,8 +1,10 @@
 import Typewriter from "typewriter-effect";
 import { useState, useEffect } from 'react';
+import ConstantsValues from "../../Constants";
+import "./Profile.css";
 
 function Profile() {
-
+    const constants: ConstantsValues = new ConstantsValues();
     const [flexDirection, setFlexDirection] = useState('flex-row');
 
     useEffect(() => {
@@ -26,49 +28,44 @@ function Profile() {
     }, []);
 
     return (
-        <div className="m-10">
-            <div className="text-center text-white text-3xl sm:text-5xl m-3 justify-evenly items-center">
+        <div className="mt-10 mb-10 w-[calc(100vw-17px)] items-center flex flex-col justify-evenly">
+            <div className="text-center text-white text-3xl sm:text-5xl m-3 flex justify-evenly items-center font-['Poppins']">
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
                             .typeString("Sejam bem vindos")
                             .pauseFor(3000)
                             .deleteAll()
-                            .typeString("Desenvolvedor Web e Mobile")
+                            .typeString("Engenheiro de Software")
                             .start();
                     }
                     }
                 />
             </div>
-            <div className={`mt-16 flex ${flexDirection} justify-center items-center`}>
-                <div className="flex flex-row justify-center p-5">
-                    <img alt="image_perfil" className="w-[250px] shadow-md rounded-full justify-center p-3 bg-[#101010]" src="logo.jpg" />
+            <div className={`mt-16 flex ${flexDirection} flex-row justify-center items-center w-[calc(100vw-17px)]`}>
+                <div className="flex flex-col justify-evenly items-center min-w-[250px] p-5">
+                    {constants.techList.slice(0, Math.ceil(constants.techList.length / 2)).map((value, i) => {
+                        return (
+                            <div className="heightButton" key={i}>
+                                <p className="letter font-['Poppins']">
+                                    {value.name}
+                                </p>
+                            </div>
+                        );
+                    })}
                 </div>
-                <div className="flex flex-col justify-evenly items-center">
-                    <div className="heightButton">
-                        <i className="devicon-flutter-plain colored"></i>
-                        <p className="text-center text-white text-2xl sm:text-2xl m-3 font-['Poppins']">
-                            Flutter
-                        </p>
-                    </div>
-                    <div className="heightButton">
-                        <i className="devicon-react-original colored"></i>
-                        <p className="text-center text-white text-2xl sm:text-2xl m-3 font-['Poppins']">
-                            React.js
-                        </p>
-                    </div>
-                    <div className="heightButton">
-                        <i className="devicon-tailwindcss-plain colored"></i>
-                        <p className="text-center text-white text-2xl sm:text-2xl m-3 font-['Poppins']">
-                            Tailwind
-                        </p>
-                    </div>
-                    <div className="heightButton">
-                        <i className="devicon-bootstrap-plain colored"></i>
-                        <p className="text-center text-white text-2xl sm:text-2xl m-3 font-['Poppins']">
-                            Bootstrap
-                        </p>
-                    </div>
+                <img alt="image_perfil" className="w-[250px] shadow-md rounded-full justify-center p-3 bg-[#101010]" src="logo.jpg" />
+                <div className="flex flex-col justify-evenly items-center min-w-[250px] p-5">
+                    {constants.techList.slice(Math.ceil(constants.techList.length / 2)).map((value, i) => {
+                        return (
+                            <div className="heightButton" key={i}>
+                                {/* <i className={value.icon}></i> */}
+                                <p className="letter font-['Poppins']">
+                                    {value.name}
+                                </p>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
 
