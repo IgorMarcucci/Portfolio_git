@@ -2,9 +2,6 @@ import { useNavigate } from "react-router-dom";
 import ConstantsValues from "../../Constants";
 import { Fragment, useEffect } from "react";
 import { AboutInterface } from "../../interfaces/about_interface";
-import { useDispatch } from "react-redux";
-import { setLang } from "../../redux/lang_slice";
-import { setName } from "../../redux/name_slice";
 import { LangService } from "../../services/lang_service";
 
 function About() {
