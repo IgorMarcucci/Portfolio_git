@@ -9,8 +9,8 @@ import Projects from "../components/Projects";
 function HomeView() {
     return (
         <>
-            <Header indexHeader={0} />
             <Content>
+                <Header indexHeader={0} />
                 <Profile />
                 <About />
                 <Projects />

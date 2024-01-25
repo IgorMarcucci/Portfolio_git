@@ -1,7 +1,17 @@
 import { BiLogoGmail } from "react-icons/bi";
 import { BiLogoWhatsapp } from "react-icons/bi";
+import { useSelector } from "react-redux";
 
 function Contact() {
+    const themeData = useSelector((state: any) => state.theme);
+
+    const getTheme = () => {
+        if (themeData['theme'] === 'dark') {
+            return 'bg-[#171717]'
+        } else {
+            return 'bg-[#ADADAD52]'
+        }
+    }
 
     const contactToEmail = () => {
         const email = 'igormarcucci1@gmail.com';
@@ -21,18 +31,18 @@ function Contact() {
     }
 
     return (
-        <div id="contact" className="mt-10 bg-[#171717] w-full shadow-md flex-col flex justify-evenly align-center">
+        <div id="contact" className={`mt-10 bg-[#171717] w-full ${getTheme()} shadow-md flex-col flex justify-evenly align-center`}>
             <p className="text-3xl sm:text-3xl text-white m-5 font-['Poppins'] flex justify-center items-center text-center">
                 Contato
             </p>
             <div className="mb-[90px] flex flex-col justify-center items-center">
-                <div onClick={contactToEmail} className="w-auto flex flex-row justify-center text-white items-center hover:text-[#6392ff]">
+                <div onClick={contactToEmail} className={`w-auto flex flex-row justify-center text-white items-center hover:text-[#134CB6]`}>
                     <button className="mt-10 mb-10 text-sm sm:text-xl font-['Poppins'] flex justify-center items-center text-center">
                         Contato via E-mail
                     </button>
                     <BiLogoGmail className="text-xl flex justify-center items-center m-2" />
                 </div>
-                <div onClick={contactToWhatsapp} className="w-auto flex flex-row justify-center text-white items-center hover:text-[#6392ff]">
+                <div onClick={contactToWhatsapp} className={`w-auto flex flex-row justify-center text-white items-center hover:text-[#134CB6]`}>
                     <button className="mt-10 mb-10 text-sm sm:text-xl font-['Poppins'] flex justify-center items-center text-center">
                         Contato via Whatsapp
                     </button>

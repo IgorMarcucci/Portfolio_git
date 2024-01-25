@@ -3,8 +3,17 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 import CareerView from './views/career_view';
 import LangView from './views/lang_view';
 import DevelopView from './views/develop_view';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { setTheme } from './redux/theme_slice';
 
 function App() {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        console.log(localStorage.getItem('themeMode'));
+        localStorage.getItem('themeMode') === 'dark' ? dispatch(setTheme('dark')) : dispatch(setTheme('light'));
+    }, [dispatch]);
 
     return (
         <div className="bg-[#0a0a0a]">

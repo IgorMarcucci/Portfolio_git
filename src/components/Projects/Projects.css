@@ -1,6 +1,8 @@
 .clipPathCard {
     clip-path: polygon(25px 0%, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0% 25px);
-    
+    transition: clip-path 0.3s ease-in-out;
+    background-color: #ffffff;
+    overflow: hidden;
 }
 
 .tagwrap {
@@ -41,4 +43,28 @@
     font-size: 14px;
     align-items: center;
     justify-content: center;
-}   
+}    
+
+@-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
