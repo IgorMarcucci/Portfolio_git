@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 function About() {
     const langService: LangService = new LangService();
     const constants: ConstantsValues = new ConstantsValues();
-    const navigate = useNavigate();
     const themeData = useSelector((state: any) => state.theme);
 
     const getFontTheme = () => {
@@ -23,26 +22,20 @@ function About() {
         window.scrollTo(0, 0);
     }, []);
     
-    const navigateRoute = (route: string) => {
-        window.scrollTo(0, 0);
-        navigate(route);
-    };
-    
     const sendDataToService = (value: AboutInterface) => {
         switch (value.title) {
             case 'Flutter':
-                langService.setData("Flutter", constants.flutterSkills);
+                langService.setData("Flutter", value.route);
                 break;
             case 'React.js':
-                langService.setData("React.js", constants.reactSkills);
+                langService.setData("React.js", value.route);
                 break;
             case 'Angular':
-                langService.setData("Angular", constants.angularSkills);
+                langService.setData("Angular", value.route);
                 break;
             default:
                 break;
         }
-        navigateRoute(value.route);
     }
 
     return (

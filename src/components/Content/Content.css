@@ -78,6 +78,7 @@
 }
 
 .content-light {
+    font-family: 'Russo One', sans-serif;
     color: black;
     flex-direction: column;
     width: 100%;

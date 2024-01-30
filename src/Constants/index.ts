@@ -145,206 +145,206 @@ class ConstantsValues {
         },
     ];
 
-    flutterSkills: LangInterface[] = [
-        {
-            name: "IDEs",
-            options: [
-                "VS Code",
-                "Android Studio",
-            ],
+    // flutterSkills: LangInterface[] = [
+    //     {
+    //         name: "IDEs",
+    //         options: [
+    //             "VS Code",
+    //             "Android Studio",
+    //         ],
             
-        },
-        {
-            name: "Widgets",
-            options: [
-                "Responsive Widgets",
-                "Stateless Widgets",
-                "Stateful Widgets",
-                "Material Widgets",
-            ],
-        },
-        {
-            name: "Storage",
-            options: [
-                "Shared Preferences",
-                "Firebase - Firestore/Storage/Authentication",
-                "Hive",
-            ],
-        },
-        {
-            name: "State Management",
-            options: [
-                "Provider",
-                "MobX",
-                "GetX",
-                "BLoC"
-            ],
-        },
-        {
-            name: "Design Principles",
-            options: [
-                "OOP",
-                "Design patterns - Singleton/MVC/MVVM",
-            ],
-        },
-        {
-            name: "APIs",
-            options: [
-                "RESTful APIs",
-                "GraphQL",
-                "Web Sockets",
-                "JSON Serialize/Deserialize",
-            ],
-        },
-        {
-            name: "Advanced Dart",
-            options: [
-                "Futures",
-                "Streams",
-                "Async/Await",
-                "Lambdas",
-            ],
-        },
-    ];
+    //     },
+    //     {
+    //         name: "Widgets",
+    //         options: [
+    //             "Responsive Widgets",
+    //             "Stateless Widgets",
+    //             "Stateful Widgets",
+    //             "Material Widgets",
+    //         ],
+    //     },
+    //     {
+    //         name: "Storage",
+    //         options: [
+    //             "Shared Preferences",
+    //             "Firebase - Firestore/Storage/Authentication",
+    //             "Hive",
+    //         ],
+    //     },
+    //     {
+    //         name: "State Management",
+    //         options: [
+    //             "Provider",
+    //             "MobX",
+    //             "GetX",
+    //             "BLoC"
+    //         ],
+    //     },
+    //     {
+    //         name: "Design Principles",
+    //         options: [
+    //             "OOP",
+    //             "Design patterns - Singleton/MVC/MVVM",
+    //         ],
+    //     },
+    //     {
+    //         name: "APIs",
+    //         options: [
+    //             "RESTful APIs",
+    //             "GraphQL",
+    //             "Web Sockets",
+    //             "JSON Serialize/Deserialize",
+    //         ],
+    //     },
+    //     {
+    //         name: "Advanced Dart",
+    //         options: [
+    //             "Futures",
+    //             "Streams",
+    //             "Async/Await",
+    //             "Lambdas",
+    //         ],
+    //     },
+    // ];
 
-    angularSkills: LangInterface[] = [
-        {
-            name: "Angular CLI",
-            options: [
-                "ng build",
-                "ng serve",
-                "ng generate",
-                "ng test",
-            ],
-        },
-        {
-            name: "Basics",
-            options: [
-                "Components",
-                "Templates",
-                "Modules",
-                "Services",
-            ],
-        },
-        {
-            name: "Forms",
-            options: [
-                "Reactives Forms",
-            ],
-        },
-        {
-            name: "Rendering Topics",
-            options: [
-                "Built-in Directives",
-                "Built-in Pipes",
-                "Change Detection",
-            ],
-        },
-        {
-            name: "Routing",
-            options: [
-                "Router Outlets",
-                "Router Links",
-                "Route Events",
-            ],
-        },
-        {
-            name: "Templates",
-            options: [
-                "Interpolation",
-                "Property Binding",
-                "Template statements",
-                "@Input and @Output",
-                "Reference variables",
-            ],
-        },
-        {
-            name: "State Management",
-            options: [
-                "NGRX",
-            ],
-        },
-        {
-            name: "Creating a custom",
-            options: [
-                "Directives",
-                "Pipe",
-            ],
-        },
-        {
-            name: "Services and Remote Data",
-            options: [
-                "Dependency Injection",
-            ],
-        },
-    ];
+    // angularSkills: LangInterface[] = [
+    //     {
+    //         name: "Angular CLI",
+    //         options: [
+    //             "ng build",
+    //             "ng serve",
+    //             "ng generate",
+    //             "ng test",
+    //         ],
+    //     },
+    //     {
+    //         name: "Basics",
+    //         options: [
+    //             "Components",
+    //             "Templates",
+    //             "Modules",
+    //             "Services",
+    //         ],
+    //     },
+    //     {
+    //         name: "Forms",
+    //         options: [
+    //             "Reactives Forms",
+    //         ],
+    //     },
+    //     {
+    //         name: "Rendering Topics",
+    //         options: [
+    //             "Built-in Directives",
+    //             "Built-in Pipes",
+    //             "Change Detection",
+    //         ],
+    //     },
+    //     {
+    //         name: "Routing",
+    //         options: [
+    //             "Router Outlets",
+    //             "Router Links",
+    //             "Route Events",
+    //         ],
+    //     },
+    //     {
+    //         name: "Templates",
+    //         options: [
+    //             "Interpolation",
+    //             "Property Binding",
+    //             "Template statements",
+    //             "@Input and @Output",
+    //             "Reference variables",
+    //         ],
+    //     },
+    //     {
+    //         name: "State Management",
+    //         options: [
+    //             "NGRX",
+    //         ],
+    //     },
+    //     {
+    //         name: "Creating a custom",
+    //         options: [
+    //             "Directives",
+    //             "Pipe",
+    //         ],
+    //     },
+    //     {
+    //         name: "Services and Remote Data",
+    //         options: [
+    //             "Dependency Injection",
+    //         ],
+    //     },
+    // ];
 
-    reactSkills: LangInterface[] = [
-        {
-            name: "CLIs Tools",
-            options: [
-                "Create React App",
-                "Vite",
-            ],
-        },
-        {
-            name: "Components",
-            options: [
-                "Functional components",
-                "JSX",
-                "Props vs State",
-                "Conditional rendering",
-                "Composition",
-            ],
-        },
-        {
-            name: "Rendering",
-            options: [
-                "Component Life Cycle",
-                "Lists and Keys",
-                "Render props",
-                "Refs",
-                "Events",
-            ],
-        },
-        {
-            name: "State Management",
-            options: [
-                "Redux",
-                "Context",
-            ],
-        },
-        {
-            name: "Router",
-            options: [
-                "React Router",
-            ],
-        },
-        {
-            name: "Hooks",
-            options: [
-                "useCallback",
-                "useContext",
-                "useState",
-                "useEffect",
-            ],
-        },
-        {
-            name: "Styling",
-            options: [
-                "CSS Modules",
-                "Tailwind",
-                "Styled Components",
-            ],
-        },
-        {
-            name: "Rest",
-            options: [
-                "Axios",
-                "Superagent",
-            ],
-        },
-    ];
+    // reactSkills: LangInterface[] = [
+    //     {
+    //         name: "CLIs Tools",
+    //         options: [
+    //             "Create React App",
+    //             "Vite",
+    //         ],
+    //     },
+    //     {
+    //         name: "Components",
+    //         options: [
+    //             "Functional components",
+    //             "JSX",
+    //             "Props vs State",
+    //             "Conditional rendering",
+    //             "Composition",
+    //         ],
+    //     },
+    //     {
+    //         name: "Rendering",
+    //         options: [
+    //             "Component Life Cycle",
+    //             "Lists and Keys",
+    //             "Render props",
+    //             "Refs",
+    //             "Events",
+    //         ],
+    //     },
+    //     {
+    //         name: "State Management",
+    //         options: [
+    //             "Redux",
+    //             "Context",
+    //         ],
+    //     },
+    //     {
+    //         name: "Router",
+    //         options: [
+    //             "React Router",
+    //         ],
+    //     },
+    //     {
+    //         name: "Hooks",
+    //         options: [
+    //             "useCallback",
+    //             "useContext",
+    //             "useState",
+    //             "useEffect",
+    //         ],
+    //     },
+    //     {
+    //         name: "Styling",
+    //         options: [
+    //             "CSS Modules",
+    //             "Tailwind",
+    //             "Styled Components",
+    //         ],
+    //     },
+    //     {
+    //         name: "Rest",
+    //         options: [
+    //             "Axios",
+    //             "Superagent",
+    //         ],
+    //     },
+    // ];
 }
 
 export default ConstantsValues;

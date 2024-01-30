@@ -6,12 +6,14 @@ import DevelopView from './views/develop_view';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setTheme } from './redux/theme_slice';
+import { setLanguage } from './redux/language_slice';
 
 function App() {
     const dispatch = useDispatch();
 
     useEffect(() => {
         console.log(localStorage.getItem('themeMode'));
+        localStorage.getItem('lang') === 'en' ? dispatch(setLanguage('en')) : dispatch(setLanguage('pt'));
         localStorage.getItem('themeMode') === 'dark' ? dispatch(setTheme('dark')) : dispatch(setTheme('light'));
     }, [dispatch]);
 
