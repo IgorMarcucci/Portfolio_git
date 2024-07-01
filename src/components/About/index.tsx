@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import ConstantsValues from "../../Constants";
 import { Fragment, useEffect } from "react";
 import { AboutInterface } from "../../interfaces/about_interface";

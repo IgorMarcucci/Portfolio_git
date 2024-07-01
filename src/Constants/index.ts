@@ -35,37 +35,42 @@ class ConstantsValues {
     projectsList: ProjectsInterface[] = [
         {
             name: "Software para atualização de embarcados",
-            description: "Software desenvolvido em C++/QT/QML para atualização de firmware em sistemas embarcados",
+            description: "Software desenvolvido em C++/QT/QML para atualização de firmware em sistemas embarcados.",
             link: '',
         },
         {
             name: "Aplicativo mobile para rastreamento",
-            description: "Aplicativo mobile desenvolvido em Flutter para rastreamento de dispositivos",
+            description: "Aplicativo mobile desenvolvido em Flutter para rastreamento de dispositivos.",
+            link: '',
+        },
+        {
+            name: "Api de aplicativo para rastreamento",
+            description: "API de software de rastreamento desenvolvida em C#, usando o ASP.NET Core, para gerenciamento dos dados do aplicativo de rastreamento.",
             link: '',
         },
         {
             name: "Plataforma web para gestão de comércio exterior",
-            description: "Plataforma web desenvolvida em Angular para gestão de operações de comércio exterior",
+            description: "Plataforma web desenvolvida em Angular para gestão de operações de comércio exterior.",
             link: '',
         },
         {
             name: "Plataforma web para gestão de custos",
-            description: "Plataforma web desenvolvida em React.js para gestão de custos",
+            description: "Plataforma web desenvolvida em React.js para gestão de custos.",
             link: '',
         },
         {
             name: "Aplicativo mobile para gestão de estoque e logística",
-            description: "Aplicativo mobile desenvolvido em Flutter para gerenciamento de estoque e operações logísticas",
+            description: "Aplicativo mobile desenvolvido em Flutter para gerenciamento de estoque e operações logísticas.",
             link: 'https://github.com/IgorMarcucci/storage_flow',
         },
         {
             name: "Aplicativo mobile para gerenciamento de estacionamento",
-            description: "Aplicativo mobile desenvolvido em Flutter para gerenciamento de estacionamento e visualização de vagas em tempo real",
+            description: "Aplicativo mobile desenvolvido em Flutter para gerenciamento de estacionamento e visualização de vagas em tempo real.",
             link: 'https://github.com/IgorMarcucci/ParkIn/tree/rebase',
         },
         {
             name: "Plataforma web para gerenciamento de questões de RH",
-            description: "Plataforma web que está sendo desenvolvida em React.js para gestão de RH",
+            description: "Plataforma web que está sendo desenvolvida em React.js para gestão de RH.",
             link: '',
         },
         {
@@ -82,6 +87,11 @@ class ConstantsValues {
             name: "Api de software de comunicação",
             description: "API de software de comunicação desenvolvida em C#, usando o ASP.NET Core, para comunicar com software de comunicação e mensagens.",
             link: '',
+        },
+        {
+            name: "Aplicativo de rádio",
+            description: "Aplicativo mobile desenvolvido em Flutter para ouvir rádio online. Possuirá funcionalidades de reprodução, ver locutores, fazer contato com emissora e reprodução em segundo plano.",
+            link: 'https://github.com/IgorMarcucci/radio_app',
         },
     ];
 
