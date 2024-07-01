@@ -4,9 +4,11 @@ import { Fragment, useEffect } from "react";
 import { AboutInterface } from "../../interfaces/about_interface";
 import { LangService } from "../../services/lang_service";
 import { useSelector } from "react-redux";
+import NavigateService from "../../services/navigate_service";
 
 function About() {
     const langService: LangService = new LangService();
+    const navigateService: NavigateService = new NavigateService();
     const constants: ConstantsValues = new ConstantsValues();
     const themeData = useSelector((state: any) => state.theme);
 
@@ -24,6 +26,9 @@ function About() {
     
     const sendDataToService = (value: AboutInterface) => {
         switch (value.title) {
+            case 'Sobre mim':
+                navigateService.navigateRoute('/career');
+                break;
             case 'Flutter':
                 langService.setData("Flutter", value.route);
                 break;
@@ -32,6 +37,12 @@ function About() {
                 break;
             case 'Angular':
                 langService.setData("Angular", value.route);
+                break;
+            case 'ASP.NET Core':
+                langService.setData("ASP.NET Core", value.route);
+                break;
+            case 'OracleSQL e PostgreSQL':
+                langService.setData("OracleSQL e PostgreSQL", value.route);
                 break;
             default:
                 break;

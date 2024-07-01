@@ -12,7 +12,6 @@ function App() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        console.log(localStorage.getItem('themeMode'));
         localStorage.getItem('lang') === 'en' ? dispatch(setLanguage('en')) : dispatch(setLanguage('pt'));
         localStorage.getItem('themeMode') === 'dark' ? dispatch(setTheme('dark')) : dispatch(setTheme('light'));
     }, [dispatch]);
@@ -25,6 +24,8 @@ function App() {
                     <Route path="/flutter" element={<LangView />} />
                     <Route path="/react" element={<LangView />} />
                     <Route path="/angular" element={<LangView />} />
+                    <Route path="/dotnet" element={<LangView />} />
+                    <Route path="/databases" element={<LangView />} />
                     <Route path="/develop" element={<DevelopView />} />
                     <Route path="/career" element={<CareerView />} />
                 </Routes>

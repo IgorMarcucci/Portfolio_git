@@ -1,5 +1,4 @@
 import { MdWork, MdSchool } from "react-icons/md"
-import { LangInterface } from "../interfaces/lang_interface";
 import { ProjectsInterface } from "../interfaces/projects_interface";
 import { CareerInterface } from "../interfaces/career_interface";
 import { AboutInterface } from "../interfaces/about_interface";
@@ -20,7 +19,7 @@ class ConstantsValues {
             icon: 'devicon-react-original colored',
         },
         {
-            name: ".NET Core",
+            name: "ASP.NET Core",
             icon: 'devicon-dotnetcore-plain colored',
         },
         {
@@ -81,7 +80,7 @@ class ConstantsValues {
         },
         {
             name: "Api de software de comunicação",
-            description: "API de software de comunicação desenvolvida em C#, usando o .NET Core, para comunicar com software de comunicação e mensagens.",
+            description: "API de software de comunicação desenvolvida em C#, usando o ASP.NET Core, para comunicar com software de comunicação e mensagens.",
             link: '',
         },
     ];
@@ -90,14 +89,14 @@ class ConstantsValues {
         {
             companyName: "Agrosure",
             role: "Desenvolvedor",
-            description: "Desenvolvimento de softwares Mobile e Web, uso do framework Flutter, do React.js e de suas tecnologias no dia a dia",
+            description: "Desenvolvimento de softwares Mobile e Web, uso dos frameworks Flutter, Angular, ASP.NET Core e uso da biblioteca React.js e suas tecnologias no dia a dia",
             date: "Agosto/2022 - Atualmente",
             icon: MdWork,
         },
         {
             companyName: "Agrosure",
             role: "Estágio de desenvolvimento",
-            description: "Desenvolvimento de softwares voltados para sistemas embarcados em C/C++, utilizando também o QT Creator e suas tecnologias",
+            description: "Desenvolvimento de softwares voltados para sistemas embarcados em C/C++, utilizando também o QT Creator e suas tecnologias, além da elaboração e criação de designs e telas usando Figma",
             date: "Maio/2022 - Agosto/2022",
             icon: MdSchool,
         },
@@ -134,217 +133,16 @@ class ConstantsValues {
             route: "/react"
         },
         {
-            title: ".NET Core",
-            description: "Habilidades no desenvolvimento de APIs, utilizando o framework .NET Core e suas tecnologias, como Entity Framework, Identity, JWT, Swagger, e outros recursos do C#.",
-            route: "/develop"
+            title: "ASP.NET Core",
+            description: "Habilidades no desenvolvimento de APIs, utilizando o framework ASP.NET Core e suas tecnologias, como Entity Framework, Identity, JWT, Swagger, e outros recursos do C#.",
+            route: "/dotnet"
         },
         {
             title: "OracleSQL e PostgreSQL",
-            description: "Conhecimento em criação de tabelas, relacionamentos, procedures, triggers, índices, e outros recursos do OracleSQL e PostgreSQL.",
-            route: "/develop"
+            description: "Conhecimento em criação e manipulação de tabelas, relacionamentos, procedures, triggers, índices, e outros recursos do OracleSQL e PostgreSQL.",
+            route: "/databases"
         },
     ];
-
-    // flutterSkills: LangInterface[] = [
-    //     {
-    //         name: "IDEs",
-    //         options: [
-    //             "VS Code",
-    //             "Android Studio",
-    //         ],
-            
-    //     },
-    //     {
-    //         name: "Widgets",
-    //         options: [
-    //             "Responsive Widgets",
-    //             "Stateless Widgets",
-    //             "Stateful Widgets",
-    //             "Material Widgets",
-    //         ],
-    //     },
-    //     {
-    //         name: "Storage",
-    //         options: [
-    //             "Shared Preferences",
-    //             "Firebase - Firestore/Storage/Authentication",
-    //             "Hive",
-    //         ],
-    //     },
-    //     {
-    //         name: "State Management",
-    //         options: [
-    //             "Provider",
-    //             "MobX",
-    //             "GetX",
-    //             "BLoC"
-    //         ],
-    //     },
-    //     {
-    //         name: "Design Principles",
-    //         options: [
-    //             "OOP",
-    //             "Design patterns - Singleton/MVC/MVVM",
-    //         ],
-    //     },
-    //     {
-    //         name: "APIs",
-    //         options: [
-    //             "RESTful APIs",
-    //             "GraphQL",
-    //             "Web Sockets",
-    //             "JSON Serialize/Deserialize",
-    //         ],
-    //     },
-    //     {
-    //         name: "Advanced Dart",
-    //         options: [
-    //             "Futures",
-    //             "Streams",
-    //             "Async/Await",
-    //             "Lambdas",
-    //         ],
-    //     },
-    // ];
-
-    // angularSkills: LangInterface[] = [
-    //     {
-    //         name: "Angular CLI",
-    //         options: [
-    //             "ng build",
-    //             "ng serve",
-    //             "ng generate",
-    //             "ng test",
-    //         ],
-    //     },
-    //     {
-    //         name: "Basics",
-    //         options: [
-    //             "Components",
-    //             "Templates",
-    //             "Modules",
-    //             "Services",
-    //         ],
-    //     },
-    //     {
-    //         name: "Forms",
-    //         options: [
-    //             "Reactives Forms",
-    //         ],
-    //     },
-    //     {
-    //         name: "Rendering Topics",
-    //         options: [
-    //             "Built-in Directives",
-    //             "Built-in Pipes",
-    //             "Change Detection",
-    //         ],
-    //     },
-    //     {
-    //         name: "Routing",
-    //         options: [
-    //             "Router Outlets",
-    //             "Router Links",
-    //             "Route Events",
-    //         ],
-    //     },
-    //     {
-    //         name: "Templates",
-    //         options: [
-    //             "Interpolation",
-    //             "Property Binding",
-    //             "Template statements",
-    //             "@Input and @Output",
-    //             "Reference variables",
-    //         ],
-    //     },
-    //     {
-    //         name: "State Management",
-    //         options: [
-    //             "NGRX",
-    //         ],
-    //     },
-    //     {
-    //         name: "Creating a custom",
-    //         options: [
-    //             "Directives",
-    //             "Pipe",
-    //         ],
-    //     },
-    //     {
-    //         name: "Services and Remote Data",
-    //         options: [
-    //             "Dependency Injection",
-    //         ],
-    //     },
-    // ];
-
-    // reactSkills: LangInterface[] = [
-    //     {
-    //         name: "CLIs Tools",
-    //         options: [
-    //             "Create React App",
-    //             "Vite",
-    //         ],
-    //     },
-    //     {
-    //         name: "Components",
-    //         options: [
-    //             "Functional components",
-    //             "JSX",
-    //             "Props vs State",
-    //             "Conditional rendering",
-    //             "Composition",
-    //         ],
-    //     },
-    //     {
-    //         name: "Rendering",
-    //         options: [
-    //             "Component Life Cycle",
-    //             "Lists and Keys",
-    //             "Render props",
-    //             "Refs",
-    //             "Events",
-    //         ],
-    //     },
-    //     {
-    //         name: "State Management",
-    //         options: [
-    //             "Redux",
-    //             "Context",
-    //         ],
-    //     },
-    //     {
-    //         name: "Router",
-    //         options: [
-    //             "React Router",
-    //         ],
-    //     },
-    //     {
-    //         name: "Hooks",
-    //         options: [
-    //             "useCallback",
-    //             "useContext",
-    //             "useState",
-    //             "useEffect",
-    //         ],
-    //     },
-    //     {
-    //         name: "Styling",
-    //         options: [
-    //             "CSS Modules",
-    //             "Tailwind",
-    //             "Styled Components",
-    //         ],
-    //     },
-    //     {
-    //         name: "Rest",
-    //         options: [
-    //             "Axios",
-    //             "Superagent",
-    //         ],
-    //     },
-    // ];
 }
 
 export default ConstantsValues;
