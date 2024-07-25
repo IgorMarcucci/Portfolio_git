@@ -3,6 +3,7 @@ import { ProjectsInterface } from "../interfaces/projects_interface";
 import { CareerInterface } from "../interfaces/career_interface";
 import { AboutInterface } from "../interfaces/about_interface";
 import { TechInterface } from "../interfaces/tech_interface";
+import { AcademicInterface } from "../interfaces/academic_interface";
 
 class ConstantsValues {
     techList: TechInterface[] = [
@@ -93,6 +94,30 @@ class ConstantsValues {
             description: "Aplicativo mobile desenvolvido em Flutter para ouvir rádio online. Possuirá funcionalidades de reprodução, ver locutores, fazer contato com emissora e reprodução em segundo plano.",
             link: 'https://github.com/IgorMarcucci/radio_app',
         },
+    ];
+
+    academicHistory: AcademicInterface[] = [
+        {
+            companyName: "USP/ESALQ - Universidade de São Paulo",
+            role: "MBA - Pós graduação",
+            description: "MBA em Engenharia de Software",
+            date: "Abril/2024 - Atualmente",
+            icon: MdSchool,
+        },
+        {
+            companyName: "Faculdade de Tecnologia de Ribeirão Preto - FATEC",
+            role: "Faculdade",
+            description: "Graduação em Análise e Desenvolvimento de Sistemas",
+            date: "Janeiro/2021 - Dezembro/2023",
+            icon: MdSchool,
+        },
+        {
+            companyName: "E.E. Prof. Sebastião Fernandes Palma - PEI",
+            role: "Ensino médio integral",
+            date: "Janeiro/2018 - Dezembro/2020",
+            icon: MdSchool,
+        }
+        
     ];
 
     workHistory: CareerInterface[] = [
