@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setTheme } from './redux/theme_slice';
 import { setLanguage } from './redux/language_slice';
+import AcademicView from './views/academic_view';
 
 function App() {
     const dispatch = useDispatch();
@@ -28,6 +29,7 @@ function App() {
                     <Route path="/databases" element={<LangView />} />
                     <Route path="/develop" element={<DevelopView />} />
                     <Route path="/career" element={<CareerView />} />
+                    <Route path="/academic" element={<AcademicView />} />
                 </Routes>
             </HashRouter>
         </div>

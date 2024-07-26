@@ -26,6 +26,9 @@ function About() {
     const sendDataToService = (value: AboutInterface) => {
         switch (value.title) {
             case 'Sobre mim':
+                navigateService.navigateRoute('/academic');
+                break;
+            case 'Carreira':
                 navigateService.navigateRoute('/career');
                 break;
             case 'Flutter':

@@ -149,7 +149,12 @@ class ConstantsValues {
     aboutList: AboutInterface[] = [
         {
             title: "Sobre mim",
-            description: "Meu nome é Igor e sou engenheiro de software com habilidades sólidas em Flutter, Angular, React.js, C#, OracleSQL e PostgreSQL. Nesta breve apresentação, estarei compartilhando um pouco sobre minha experiência e conhecimento em ambas tecnologias.",
+            description: "Meu nome é Igor e tenho 21 anos, sou desenvolvedor de software e pós graduando em Engenharia de Software pela USP. Sou apaixonado por tecnologia e desenvolvimento de software, e estou sempre em busca de novos desafios e aprendizados.",
+            route: "/academic"
+        },
+        {
+            title: "Carreira",
+            description: "Tenho experiência em desenvolvimento de software, com habilidades sólidas para entregar soluções de qualidade aos meus clientes.",
             route: "/career"
         },
         {
