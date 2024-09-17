@@ -114,6 +114,7 @@ class ConstantsValues {
         {
             companyName: "E.E. Prof. Sebastião Fernandes Palma - PEI",
             role: "Ensino médio integral",
+            description: "Ensino médio em período integral",
             date: "Janeiro/2018 - Dezembro/2020",
             icon: MdSchool,
         }
