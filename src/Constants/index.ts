@@ -24,13 +24,21 @@ class ConstantsValues {
             icon: 'devicon-dotnetcore-plain colored',
         },
         {
+            name: "Python",
+            icon: 'devicon-python-plain colored',
+        },
+        {
             name: "OracleSQL",
             icon: 'devicon-oracle-original colored',
         },
         {
             name: "PostgreSQL",
             icon: 'devicon-postgresql-plain colored',
-        }
+        },
+        {
+            name: "SQL Server",
+            icon: 'devicon-microsoftsqlserver-plain colored',
+        },
     ];
 
     projectsList: ProjectsInterface[] = [
@@ -125,14 +133,21 @@ class ConstantsValues {
         {
             companyName: "Agrosure",
             role: "Desenvolvedor",
-            description: "Desenvolvimento de softwares Mobile e Web, uso dos frameworks Flutter, Angular, ASP.NET Core e uso da biblioteca React.js e suas tecnologias no dia a dia",
+            description: "Prototipação e desenvolvimento de aplicativos mobile e web, uso das linguagens de programação Dart, JavaScript, TypeScript, C# e Python. Uso dos frameworks Flutter, ASP.NET Core e Angular, além do uso do React.js",
             date: "Agosto/2022 - Atualmente",
+            icon: MdWork,
+        },
+        {
+            companyName: "Remoto",
+            role: "Desenvolvedor freelancer",
+            description: "Uso das linguagens Python, JavaScript, Dart e C#, com os frameworks Flutter, AngularJS, Flask, Django e ASP.NET Core, visando utilizar a melhor tecnologia que se adequa à necessidade do cliente.",
+            date: "Julho/2022 - Maio/2024",
             icon: MdWork,
         },
         {
             companyName: "Agrosure",
             role: "Estágio de desenvolvimento",
-            description: "Desenvolvimento de softwares voltados para sistemas embarcados em C/C++, utilizando também o QT Creator e suas tecnologias, além da elaboração e criação de designs e telas usando Figma",
+            description: "Uso das linguagens C, C++ e C#. Desenvolvimento de softwares para desktop e sistemas embarcados usando o framework QT e uso do ASP.NET Core para construção de Web APIs.",
             date: "Maio/2022 - Agosto/2022",
             icon: MdSchool,
         },
@@ -179,7 +194,7 @@ class ConstantsValues {
             route: "/dotnet"
         },
         {
-            title: "OracleSQL e PostgreSQL",
+            title: "OracleSQL, PostgreSQL e SQL Server",
             description: "Conhecimento em criação e manipulação de tabelas, relacionamentos, procedures, triggers, índices, e outros recursos do OracleSQL e PostgreSQL.",
             route: "/databases"
         },

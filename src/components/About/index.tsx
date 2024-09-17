@@ -43,8 +43,8 @@ function About() {
             case 'ASP.NET Core':
                 langService.setData("ASP.NET Core", value.route);
                 break;
-            case 'OracleSQL e PostgreSQL':
-                langService.setData("OracleSQL e PostgreSQL", value.route);
+            case 'OracleSQL, PostgreSQL e SQL Server':
+                langService.setData("OracleSQL, PostgreSQL e SQL Server", value.route);
                 break;
             default:
                 break;
