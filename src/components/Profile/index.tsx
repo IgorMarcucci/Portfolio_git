@@ -44,7 +44,7 @@ function Profile() {
                     IGOR MARCUCCI
                 </p>
                 <p className="text-center text-white text-3xl sm:text-3xl font-['Open sans'] font-bold my-2">
-                    ENGENHEIRO DE SOFTWARE
+                    ESPECIALISTA EM ENGENHARIA DE SOFTWARE
                 </p>
             </div>
             <div className={`mt-16 flex ${flexDirection} flex-row justify-center items-center w-[calc(100vw-17px)]`}>

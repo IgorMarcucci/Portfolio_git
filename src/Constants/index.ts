@@ -102,6 +102,11 @@ class ConstantsValues {
             description: "Aplicativo mobile desenvolvido em Flutter para ouvir rádio online. Possuirá funcionalidades de reprodução, ver locutores, fazer contato com emissora e reprodução em segundo plano.",
             link: 'https://github.com/IgorMarcucci/radio_app',
         },
+        {
+            name: "Aplicativo BNB MPE +",
+            description: "Aplicativo mobile desenvolvido para micro e pequenas empresas, com funcionalidades que auxiliam na gestão do dia a dia do empreendedor, oferecendo mais praticidade, organização e controle do seu negócio.",
+            link: 'https://play.google.com/store/apps/details?id=br.gov.bnb.s655.mpe.cliente&hl=pt_BR',
+        },
     ];
 
     academicHistory: AcademicInterface[] = [
@@ -109,7 +114,7 @@ class ConstantsValues {
             companyName: "USP/ESALQ - Universidade de São Paulo",
             role: "MBA - Pós graduação",
             description: "MBA em Engenharia de Software",
-            date: "Abril/2024 - Atualmente",
+            date: "Abril/2024 - Janeiro/2026",
             icon: MdSchool,
         },
         {
@@ -131,10 +136,17 @@ class ConstantsValues {
 
     workHistory: CareerInterface[] = [
         {
+            companyName: "Engesoftware",
+            role: "Desenvolvedor Mobile Pleno - Banco do Nordeste (BNB)",
+            description: "Atuação como Desenvolvedor Mobile e Web no cliente Banco do Nordeste (BNB)",
+            date: "Novembro/2024 - Atualmente",
+            icon: MdWork,
+        },
+        {
             companyName: "Agrosure",
             role: "Desenvolvedor",
             description: "Prototipação e desenvolvimento de aplicativos mobile e web, uso das linguagens de programação Dart, JavaScript, TypeScript, C# e Python. Uso dos frameworks Flutter, ASP.NET Core e Angular, além do uso do React.js",
-            date: "Agosto/2022 - Atualmente",
+            date: "Agosto/2022 - Novembro/2024",
             icon: MdWork,
         },
         {
@@ -165,7 +177,7 @@ class ConstantsValues {
     aboutList: AboutInterface[] = [
         {
             title: "Sobre mim",
-            description: "Meu nome é Igor e tenho 21 anos, sou desenvolvedor de software e pós graduando em Engenharia de Software pela USP. Sou apaixonado por tecnologia e desenvolvimento de software, e estou sempre em busca de novos desafios e aprendizados.",
+            description: "Meu nome é Igor, sou desenvolvedor de software e pós graduado em Engenharia de Software pela USP. Sou apaixonado por tecnologia e desenvolvimento de software, e estou sempre em busca de novos desafios e aprendizados.",
             route: "/academic"
         },
         {
